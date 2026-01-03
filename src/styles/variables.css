@@ -1,0 +1,88 @@
+:root {
+  /* 토스 브랜드 색상 */
+  --toss-blue: #3182F6;
+  --toss-blue-dark: #1B64DA;
+  --toss-blue-light: #E8F3FF;
+  
+  /* 그레이스케일 */
+  --toss-gray-900: #191F28;
+  --toss-gray-800: #333D4B;
+  --toss-gray-700: #4E5968;
+  --toss-gray-600: #6B7684;
+  --toss-gray-500: #8B95A1;
+  --toss-gray-400: #B0B8C1;
+  --toss-gray-300: #D1D6DB;
+  --toss-gray-200: #E5E8EB;
+  --toss-gray-100: #F2F4F6;
+  --toss-gray-50: #F9FAFB;
+  --toss-white: #FFFFFF;
+  
+  /* 시맨틱 색상 */
+  --toss-red: #F04452;
+  --toss-red-light: #FFEBEE;
+  --toss-green: #00C48C;
+  --toss-green-light: #E8FAF5;
+  --toss-yellow: #F5A623;
+  --toss-yellow-light: #FFF8E6;
+  --toss-purple: #8B5CF6;
+  --toss-purple-light: #F3EFFF;
+  
+  /* 그라디언트 */
+  --gradient-primary: linear-gradient(135deg, #3182F6 0%, #6B93FF 100%);
+  --gradient-success: linear-gradient(135deg, #00C48C 0%, #00D9A0 100%);
+  --gradient-warm: linear-gradient(135deg, #FF6B6B 0%, #FFE66D 100%);
+  --gradient-cool: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  
+  /* 그림자 */
+  --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.04);
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.08);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.12);
+  --shadow-xl: 0 16px 48px rgba(0, 0, 0, 0.16);
+  
+  /* 간격 */
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+  --spacing-2xl: 48px;
+  
+  /* 폰트 크기 */
+  --font-xs: 11px;
+  --font-sm: 13px;
+  --font-md: 15px;
+  --font-lg: 17px;
+  --font-xl: 20px;
+  --font-2xl: 24px;
+  --font-3xl: 28px;
+  --font-4xl: 34px;
+  
+  /* 폰트 굵기 */
+  --font-regular: 400;
+  --font-medium: 500;
+  --font-semibold: 600;
+  --font-bold: 700;
+  
+  /* 라인 높이 */
+  --line-tight: 1.2;
+  --line-normal: 1.5;
+  --line-relaxed: 1.7;
+  
+  /* 모서리 */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-full: 9999px;
+  
+  /* 트랜지션 */
+  --transition-fast: 150ms ease;
+  --transition-normal: 250ms ease;
+  --transition-slow: 400ms ease;
+  
+  /* 레이아웃 */
+  --header-height: 56px;
+  --bottom-nav-height: 72px;
+  --safe-area-bottom: env(safe-area-inset-bottom, 0px);
+}
