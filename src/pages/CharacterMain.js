@@ -125,7 +125,7 @@ export function renderCharacterMain(container) {
         <div class="info-card">
           <div class="info-header">
             <span class="level-badge">레벨${level}</span>
-            <h2 class="character-name">${character.name}</h2>
+            <h2 class="character-name">${character.characterName}</h2>
           </div>
           <div class="exp-row">
             <span class="exp-label">경험치 ${Math.round((exp / expToNext) * 100)}%</span>

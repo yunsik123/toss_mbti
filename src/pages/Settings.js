@@ -3,11 +3,11 @@ import { router } from '../router.js';
 import { store } from '../store.js';
 
 export function renderSettings(container) {
-    const character = store.get('character');
-    const level = store.get('level');
-    const mbti = store.get('mbtiResult');
+  const character = store.get('character');
+  const level = store.get('level');
+  const mbti = store.get('mbtiResult');
 
-    container.innerHTML = `
+  container.innerHTML = `
     <div class="settings-page">
       <header class="page-header">
         <button class="btn btn-icon" id="backBtn">
@@ -25,7 +25,7 @@ export function renderSettings(container) {
             <span class="profile-emoji">${character.emoji}</span>
           </div>
           <div class="profile-info">
-            <h2 class="profile-name">${character.name}</h2>
+            <h2 class="profile-name">${character.characterName}</h2>
             <p class="profile-meta">${mbti} · Lv.${level}</p>
           </div>
           <button class="btn btn-secondary btn-sm" id="viewProfileBtn">프로필 보기</button>
@@ -238,36 +238,36 @@ export function renderSettings(container) {
     </style>
   `;
 
-    // 이벤트 바인딩
-    document.getElementById('backBtn').addEventListener('click', () => {
-        router.navigate('/main');
-    });
+  // 이벤트 바인딩
+  document.getElementById('backBtn').addEventListener('click', () => {
+    router.navigate('/main');
+  });
 
-    document.getElementById('viewProfileBtn').addEventListener('click', () => {
-        router.navigate('/character');
-    });
+  document.getElementById('viewProfileBtn').addEventListener('click', () => {
+    router.navigate('/character');
+  });
 
-    document.getElementById('notificationBtn').addEventListener('click', () => {
-        router.navigate('/notification');
-    });
+  document.getElementById('notificationBtn').addEventListener('click', () => {
+    router.navigate('/notification');
+  });
 
-    document.getElementById('retestBtn').addEventListener('click', () => {
-        if (confirm('MBTI를 다시 테스트하면 현재 캐릭터와 데이터가 초기화됩니다. 계속할까요?')) {
-            store.reset();
-            router.navigate('/fin-mbti');
-        }
-    });
+  document.getElementById('retestBtn').addEventListener('click', () => {
+    if (confirm('MBTI를 다시 테스트하면 현재 캐릭터와 데이터가 초기화됩니다. 계속할까요?')) {
+      store.reset();
+      router.navigate('/fin-mbti');
+    }
+  });
 
-    document.getElementById('resetBtn').addEventListener('click', () => {
-        document.getElementById('confirmModal').classList.remove('hidden');
-    });
+  document.getElementById('resetBtn').addEventListener('click', () => {
+    document.getElementById('confirmModal').classList.remove('hidden');
+  });
 
-    document.getElementById('cancelReset').addEventListener('click', () => {
-        document.getElementById('confirmModal').classList.add('hidden');
-    });
+  document.getElementById('cancelReset').addEventListener('click', () => {
+    document.getElementById('confirmModal').classList.add('hidden');
+  });
 
-    document.getElementById('confirmReset').addEventListener('click', () => {
-        store.reset();
-        router.navigate('/');
-    });
+  document.getElementById('confirmReset').addEventListener('click', () => {
+    store.reset();
+    router.navigate('/');
+  });
 }

@@ -369,7 +369,7 @@ class Store {
             missions: missionList.map(m => ({ ...m, completed: false })),
             history: [{
                 type: 'create',
-                message: `${character.name} 캐릭터가 탄생했습니다! 🎉`,
+                message: `${character.characterName} 캐릭터가 탄생했습니다! 🎉`,
                 time: new Date().toISOString(),
             }],
         });

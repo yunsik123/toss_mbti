@@ -46,7 +46,7 @@ export function renderTossHome(container) {
                 <span class="char-emoji">${character.emoji}</span>
               </div>
               <div class="char-info">
-                <h3 class="char-name">${character.name}</h3>
+                <h3 class="char-name">${character.characterName}</h3>
                 <p class="char-desc">오늘도 성장시켜볼까요?</p>
               </div>
               <div class="char-arrow">›</div>

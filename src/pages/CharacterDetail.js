@@ -46,7 +46,7 @@ export function renderCharacterDetail(container) {
           <div class="profile-main">
             <div class="profile-name-row">
               <span class="level-badge">Lv.${level}</span>
-              <h2 class="profile-name">${character.name}</h2>
+              <h2 class="profile-name">${character.characterName}</h2>
             </div>
             <div class="profile-badges">
               <span class="badge badge-blue">${mbti}</span>

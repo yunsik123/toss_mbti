@@ -62,7 +62,7 @@ export function renderMbtiResult(container) {
 
         <div class="result-info">
           <span class="mbti-badge">Type ${mbti}</span>
-          <h1 class="character-name">${character.name}</h1>
+          <h1 class="character-name">${character.characterName}</h1>
           <p class="character-subtitle">${character.characterName}</p>
           <p class="character-desc">${character.desc}</p>
 
@@ -83,7 +83,7 @@ export function renderMbtiResult(container) {
 
         <div class="result-actions">
           <button class="btn btn-primary btn-lg btn-full" id="startBtn">
-            ${character.name} 키우러 가기 🚀
+            ${character.characterName} 키우러 가기 🚀
           </button>
           <button class="btn btn-secondary btn-lg btn-full" id="retryBtn">
             다시 테스트하기

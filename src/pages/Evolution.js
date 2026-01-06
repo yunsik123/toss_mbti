@@ -3,23 +3,23 @@ import { router } from '../router.js';
 import { store, characters } from '../store.js';
 
 export function renderEvolution(container) {
-    const character = store.get('character');
-    const level = store.get('level');
-    const mbti = store.get('mbtiResult');
+  const character = store.get('character');
+  const level = store.get('level');
+  const mbti = store.get('mbtiResult');
 
-    // 진화 단계 정의
-    const evolutionStages = [
-        { level: 1, name: '아기', emoji: '🥚', unlocked: level >= 1 },
-        { level: 5, name: '어린이', emoji: character.emoji, unlocked: level >= 5 },
-        { level: 10, name: '청소년', emoji: character.emoji, unlocked: level >= 10 },
-        { level: 20, name: '성인', emoji: character.emoji, unlocked: level >= 20 },
-        { level: 50, name: '마스터', emoji: '👑', unlocked: level >= 50 },
-    ];
+  // 진화 단계 정의
+  const evolutionStages = [
+    { level: 1, name: '아기', emoji: '🥚', unlocked: level >= 1 },
+    { level: 5, name: '어린이', emoji: character.emoji, unlocked: level >= 5 },
+    { level: 10, name: '청소년', emoji: character.emoji, unlocked: level >= 10 },
+    { level: 20, name: '성인', emoji: character.emoji, unlocked: level >= 20 },
+    { level: 50, name: '마스터', emoji: '👑', unlocked: level >= 50 },
+  ];
 
-    const currentStage = evolutionStages.filter(s => s.unlocked).pop();
-    const nextStage = evolutionStages.find(s => !s.unlocked);
+  const currentStage = evolutionStages.filter(s => s.unlocked).pop();
+  const nextStage = evolutionStages.find(s => !s.unlocked);
 
-    container.innerHTML = `
+  container.innerHTML = `
     <div class="evolution-page">
       <header class="page-header">
         <button class="btn btn-icon" id="backBtn">
@@ -36,7 +36,7 @@ export function renderEvolution(container) {
           <div class="stage-character" style="background: ${character.color}20;">
             <span class="stage-emoji">${character.emoji}</span>
           </div>
-          <h2 class="stage-name">${currentStage.name} ${character.name}</h2>
+          <h2 class="stage-name">${currentStage.name} ${character.characterName}</h2>
           <p class="stage-level">Lv.${level}</p>
           
           ${nextStage ? `
@@ -322,8 +322,8 @@ export function renderEvolution(container) {
     </style>
   `;
 
-    // 뒤로가기
-    document.getElementById('backBtn').addEventListener('click', () => {
-        router.navigate('/main');
-    });
+  // 뒤로가기
+  document.getElementById('backBtn').addEventListener('click', () => {
+    router.navigate('/main');
+  });
 }
