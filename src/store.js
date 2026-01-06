@@ -161,7 +161,7 @@ export const characters = {
     // Type A – 안정 수호자 (손실회피 높음, 위험회피 높음, 확률왜곡 낮음)
     A: {
         name: "안정 수호자",
-        characterName: "햄스터",
+        characterName: "보안관 햄스터",
         emoji: "🛡️",
         image: "/images/characters/hamster.png",
         color: "#4A90D9",
@@ -176,7 +176,7 @@ export const characters = {
     // Type B – 균형 설계자 (손실회피 높음, 위험회피 낮음, 확률왜곡 낮음)
     B: {
         name: "균형 설계자",
-        characterName: "호밀이",
+        characterName: "마녀 캐치",
         emoji: "⚖️",
         image: "/images/characters/wheat.png",
         color: "#50C878",
@@ -191,7 +191,7 @@ export const characters = {
     // Type C – 감정 취약 투자자 (손실회피 높음, 위험회피 높음, 확률왜곡 높음)
     C: {
         name: "감정 취약 투자자",
-        characterName: "고양이",
+        characterName: "호밀이",
         emoji: "🎭",
         image: "/images/characters/cat.png",
         color: "#FF6B6B",
@@ -206,7 +206,7 @@ export const characters = {
     // Type D – 도전 탐험가 (손실회피 낮음, 위험회피 낮음, 확률왜곡 높음)
     D: {
         name: "도전 탐험가",
-        characterName: "여우",
+        characterName: "왕관 쓴 사막여우",
         emoji: "🚀",
         image: "/images/characters/fox.png",
         color: "#FFB347",
