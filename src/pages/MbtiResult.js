@@ -63,7 +63,7 @@ export function renderMbtiResult(container) {
         <div class="result-info">
           <span class="mbti-badge">Type ${mbti}</span>
           <h1 class="character-name">${character.characterName}</h1>
-          <p class="character-subtitle">${character.characterName}</p>
+          <p class="character-subtitle">${character.name}</p>
           <p class="character-desc">${character.desc}</p>
 
           <div class="character-traits">
